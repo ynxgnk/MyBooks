@@ -13,6 +13,8 @@
 		B8D2EC9F2A034E1F00A1E086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D2EC9D2A034E1F00A1E086 /* Main.storyboard */; };
 		B8D2ECA12A034E2200A1E086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D2ECA02A034E2200A1E086 /* Assets.xcassets */; };
 		B8D2ECA42A034E2200A1E086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D2ECA22A034E2200A1E086 /* LaunchScreen.storyboard */; };
+		B8D2ECAD2A034EB400A1E086 /* UIScrollView_InfiniteScroll in Frameworks */ = {isa = PBXBuildFile; productRef = B8D2ECAC2A034EB400A1E086 /* UIScrollView_InfiniteScroll */; };
+		B8D2ECAF2A03502D00A1E086 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ECAE2A03502D00A1E086 /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		B8D2ECA02A034E2200A1E086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8D2ECA32A034E2200A1E086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8D2ECA52A034E2200A1E086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D2ECAE2A03502D00A1E086 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D2ECAD2A034EB400A1E086 /* UIScrollView_InfiniteScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				B8D2ECA02A034E2200A1E086 /* Assets.xcassets */,
 				B8D2ECA22A034E2200A1E086 /* LaunchScreen.storyboard */,
 				B8D2ECA52A034E2200A1E086 /* Info.plist */,
+				B8D2ECAE2A03502D00A1E086 /* APICaller.swift */,
 			);
 			path = MyBooks;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = MyBooks;
+			packageProductDependencies = (
+				B8D2ECAC2A034EB400A1E086 /* UIScrollView_InfiniteScroll */,
+			);
 			productName = MyBooks;
 			productReference = B8D2EC942A034E1F00A1E086 /* MyBooks.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = B8D2EC8B2A034E1F00A1E086;
+			packageReferences = (
+				B8D2ECAB2A034EB400A1E086 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
+			);
 			productRefGroup = B8D2EC952A034E1F00A1E086 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				B8D2EC9C2A034E1F00A1E086 /* ViewController.swift in Sources */,
 				B8D2EC982A034E1F00A1E086 /* AppDelegate.swift in Sources */,
 				B8D2EC9A2A034E1F00A1E086 /* SceneDelegate.swift in Sources */,
+				B8D2ECAF2A03502D00A1E086 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8D2ECAB2A034EB400A1E086 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pronebird/UIScrollView-InfiniteScroll";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8D2ECAC2A034EB400A1E086 /* UIScrollView_InfiniteScroll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8D2ECAB2A034EB400A1E086 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */;
+			productName = UIScrollView_InfiniteScroll;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8D2EC8C2A034E1F00A1E086 /* Project object */;
 }
